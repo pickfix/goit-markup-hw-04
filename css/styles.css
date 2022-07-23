@@ -490,13 +490,19 @@ img {
 .contact-footer:focus {
   color: var(--akcent-text-color);
 }
-
-.social-footer {
+.social-footer{
+  display: flex;
+}
+.social-list {
+  list-style: none;
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   margin-left: 70px;
+}
+.social-item:not(:last-child){
+  margin-right: 10px;
 }
 .footer-social-link {
   display: flex;
@@ -514,10 +520,6 @@ img {
 .footer-social-link:focus {
   background-color: var(--akcent-text-color);
 }
-.footer-social-link:not(:last-child) {
-  margin-right: 10px;
-}
-
 /* портфолио */
 .title-link {
   margin: 0;
