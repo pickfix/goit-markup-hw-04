@@ -400,7 +400,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
 
   color: var(--body-text-color);
@@ -434,6 +434,8 @@ img {
 }
 .footer-container {
   display: flex;
+  justify-content: baseline;
+  
 }
 
 .logo-footer {
@@ -491,15 +493,30 @@ img {
   color: var(--akcent-text-color);
 }
 .social-footer{
-  display: flex;
+  margin-left: 70px;
 }
+.social-text{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--main-background-color);
+
+}
+
 .social-list {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
+
 }
 .social-item:not(:last-child){
   margin-right: 10px;
