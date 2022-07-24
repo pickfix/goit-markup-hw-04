@@ -434,8 +434,11 @@ img {
 }
 .footer-container {
   display: flex;
-  justify-content: baseline;
-  
+  align-items: baseline;
+
+}
+.footer-nav{
+  display: inline-block;
 }
 
 .logo-footer {
